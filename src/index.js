@@ -1,10 +1,7 @@
 import cors from "cors";
 import express from "express";
 import rootRouter from "./route/rootRouter.js";
-
 const app = express();
-
-
 
 
 app.use(express.json());

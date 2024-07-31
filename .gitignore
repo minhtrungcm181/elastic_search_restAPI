@@ -1,3 +1,4 @@
 http_ca.crt
 config/default.json
 node_modules
+.env

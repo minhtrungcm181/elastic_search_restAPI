@@ -1,12 +1,7 @@
-import express from 'express'
-import { run } from '../controller/elastic.js'
+import express from 'express';
+import elasticRouter from './elasticRouter.js';
 
+const rootRouter = express.Router();
+rootRouter.use('/elastic', elasticRouter);
 
-
-const rootRouter = express.Router()
-rootRouter.get('/elastic', run)
-
-
-
-
-export default rootRouter
+export default rootRouter;

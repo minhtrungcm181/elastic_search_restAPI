@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js",
+    "start": "nodemon --env-file=.env src/index.js",
     "bootstrap": "docker-compose up -d",
     "clear_boot": "docker-compose down"
   },
@@ -14,11 +14,14 @@
   "description": "",
   "dependencies": {
     "@elastic/elasticsearch": "^8.14.0",
-    "config": "^3.3.12",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.19.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "eslint": "^9.8.0",
+    "globals": "^15.8.0",
     "nodemon": "^3.1.0"
-}
+  }
 }
